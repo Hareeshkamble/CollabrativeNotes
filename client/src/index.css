@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+i{
+  cursor: pointer;
+font-size: 18px;
+transition: 0.3s ease;
+}
+i:hover{
+  transform: scale(1.5);
+}
+/* Navbar.css */
+
+.navbar-glass {
+  background: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+  backdrop-filter: blur(10px);           /* Glass effect with blur */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  border-radius: 10px;                   /* Optional: Rounded corners for aesthetic */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Optional: A subtle border */
+}
+
+.navbar-glass .nav-link {
+  color: #333; /* Darker text for contrast */
+  transition: color 0.3s ease;
+}
+
+.navbar-glass .nav-link.active {
+  color: #007bff; /* Highlight active link */
+}
+
+.navbar-glass .nav-link:hover {
+  color: #0056b3; /* Change color on hover */
+}
+
+.btn-primary {
+  backdrop-filter: none; /* Remove blur effect from buttons */
+}
+

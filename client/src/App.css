@@ -1,0 +1,94 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+body{
+  background: url(/src/download-2.png) center;
+
+  background-position:center;
+
+ 
+}
+.glass{
+
+background: rgba(255, 255, 255, 0.18);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.fa-trash:hover::after{
+content: "delete";
+font-size: 5px ;
+}
+.fa-edit:hover::after{
+  content: "edit";
+  font-size: 5px ;
+  top: 20px;
+  }
+  
+
+/* Navbar.css */
+
+.navbar-glass {
+  background: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+  backdrop-filter: blur(10px);           /* Glass effect with blur */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  border-radius: 10px;                   /* Optional: Rounded corners for aesthetic */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Optional: A subtle border */
+}
+
+.navbar-glass .nav-link {
+  color: #333; /* Darker text for contrast */
+  transition: color 0.3s ease;
+}
+
+.navbar-glass .nav-link.active {
+  color: #007bff; /* Highlight active link */
+}
+
+.navbar-glass .nav-link:hover {
+  color: #0056b3; /* Change color on hover */
+}
+
+.btn-primary {
+  backdrop-filter: none; /* Remove blur effect from buttons */
+}
+
+
+  
