@@ -9,7 +9,7 @@ export default function Signup(props) {
     const submitForm = async (e) => {
         e.preventDefault();
         const { email, name, password } = credentials;
-        const response = await fetch("http://localhost/api/auth/createuser", {
+        const response = await fetch("https://collabrative-notes.vercel.app/api/auth/createuser", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

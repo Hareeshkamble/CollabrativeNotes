@@ -12,7 +12,7 @@ export default function Login(props) {
 
     const logInSubmit = async (e) => {
         e.preventDefault();
-        const response = await fetch("http://localhost/api/auth/login", {
+        const response = await fetch("https://collabrative-notes.vercel.app/api/auth/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

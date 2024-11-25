@@ -21,13 +21,15 @@ export default function Contribute() {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-        const response = await fetch("http://localhost:80/api/notes/contributing", {
-            method: "PUT",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(formData),
-        })
+       const response = await fetch("https://collabrative-notes.vercel.app/api/notes/contributing", {
+    method: "PUT",
+    headers: {
+        "Content-Type": "application/json",
+    },
+    body: JSON.stringify(formData),
+})
+
+
         
         if (!response.ok) {
             const errorText = await response.text()

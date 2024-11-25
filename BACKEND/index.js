@@ -5,8 +5,13 @@ connectToMongo();
 const app=express()
 app.use(express.json()) 
 const port=80;
+const cors = require('cors');
+app.use(cors({
+    origin: "http://localhost:3000", // or "*" to allow all origins
+    credentials: true
+}));
 
-app.use(cors())
+// app.use(cors())
 app.use(express.json())
 
 app.get("/",(req,res)=>{
